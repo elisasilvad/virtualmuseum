@@ -163,13 +163,13 @@ h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li a {
   font-size: 15px;
   padding: 30px 15px;
-  color: #ffffe6);
+  color: white;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: white;
+.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {                         /* hover menu principale !!!*/
+  color: #e6b3ff;
 }
 .fh5co-nav ul li.has-dropdown {
   position: relative;
@@ -186,7 +186,7 @@ h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 0;
   text-align: left;
-  background: #d580ff;
+  background: #000;
   padding: 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -205,7 +205,7 @@ h2, h3, h4, h5, h6, figure {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #cc66ff;
+  border-bottom-color: #000;
   border-width: 8px;
   margin-left: -8px;
 }
@@ -250,13 +250,14 @@ h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 100px;
   border-radius: 100px;
 }
-.fh5co-nav ul li.btn-cta a:hover span {
+.fh5co-nav ul li.btn-cta a:hover span {                                             /* hover bottone menù principale */
+  color:#e6b3ff;
   -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #fff !important;
+  color: #e6b3ff !important;
 }
 
 #fh5co-header,
