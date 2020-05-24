@@ -510,6 +510,10 @@ h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.05);
 }
 
+.fh5co-bg-section1 {
+  background: rgba(0, 0, 0, 0.03);
+}
+
 #fh5co-explore,
 #fh5co-pricing,
 #fh5co-testimonial,
@@ -1330,7 +1334,7 @@ h2, h3, h4, h5, h6, figure {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.5);
+  background: #d580ff;
   color: #fff;
   text-align: center;
   -webkit-border-radius: 4px;
@@ -1646,6 +1650,76 @@ h2, h3, h4, h5, h6, figure {
 
 
 /* timeline */
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #79ecec;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #79ecec;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #79ecec;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #79ecec;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
 
 
 
