@@ -50,6 +50,100 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+
+		.sidenav {
+		  height: 100%;
+		  width: 200px;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #d580ff;   /* #111 */
+		  overflow-x: hidden;
+		  padding-top: 20px;
+		}
+
+		.sidenav a {
+		  padding: 6px 6px 6px 32px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  color: #818181;
+		  display: block;
+		}
+
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+
+		.sidenav a:active {
+		  color: #f1f1f1;
+		}
+
+		.main {
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		}
+
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+
+				/* Style the sidenav links and the dropdown button */
+		.sidenav a, .dropdown-btn {
+		  padding: 6px 8px 6px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  color:  #262626; /*#818181;*/
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		}
+
+		/* On mouse-over */
+		.sidenav a:hover, .dropdown-btn:hover {
+		  color: #f1f1f1;
+		  background-color: #786284;  /* #262626; */
+		}
+
+		/* Main content */
+		.main {
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		  font-size: 20px; /* Increased text to enable scrolling */
+		  padding: 0px 10px;
+		}
+
+		/* Add an active class to the active dropdown button */
+		.active {
+		  background-color:#786284; /* #262626; */
+		  color: white;
+		}
+
+		/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+		.dropdown-container {
+		  display: none;
+		  background-color:#786284;  /*#262626;*/
+		  font-size: 12px;
+		  padding-left: 8px;
+		}
+
+		/* Optional: Style the caret down icon */
+		.fa-caret-down {
+		  float: right;
+		  padding-right: 8px;
+		}
+
+		/* Some media queries for responsiveness */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 15px;}
+		}
+		</style>
+
 </head>
 	<body>
 		
@@ -110,7 +204,97 @@
 	<div id="fh5co-explore" class="fh5co-bg-section">
 	<a id="project"></a>
 		<div class="container">
-			<div class="row animate-box">
+		<div class="fh5co-nav">
+		<div class="sidenav">
+		  <a href="about.html#intro">Introduction</a>
+		  <button class="dropdown-btn">Ideation<i class="fa fa-caret-down"></i></button>
+		  <div class="dropdown-container">
+		    <a href="about.html#concept">Concept</a>
+		    <a href="about.html#purpose">Purposes</a>
+		  </div>
+		  <button class="dropdown-btn">Requirements<i class="fa fa-caret-down"></i></button>
+		  <div class="dropdown-container">
+		    <a href="about.html#ideation">Input</a>
+		    <a href="#">Output</a>
+		  </div>
+		  <a href="#">Feasibility study</a>
+		  <button class="dropdown-btn">Content<i class="fa fa-caret-down"></i></button>
+		  <div class="dropdown-container">
+		    <a href="about.html#ideation">Museum content and organization</a>
+		    <a href="#">Selection criteria</a>
+		    <a href="#">Metadata</a>
+		  </div>
+		  <a href="#">Multimedia score</a>
+		  <button class="dropdown-btn">Design and development schema<i class="fa fa-caret-down"></i></button>
+		  <div class="dropdown-container">
+		    <a href="about.html#ideation">Graphic User Interface</a>
+		    <a href="#">Accessability and usability</a>
+		  </div>
+		  <a href="#">IMOW Ethics and Rules</a>
+		  <a href="#">Further Development and Maintenance Issues</a>
+		  <a href="#">Bibliography</a>
+		</div>
+	</div>
+
+	<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+
+<a id ="about"><br>
+
+<div class="main">
+	<a id="intro">
+			<h1>IN MY OWN WORDS DOCUMENTATION</h1><br>
+
+			<h2>Introduction - Why a museum dedicated to memory?</h2>
+			
+	<a id="ideation">		
+			<h2>Ideation</h2>
+			<ul>
+				<a id="concept">
+				<li><h3>Concept</h3></li>
+				<a id="purpose">
+				<li><h3>Purposes</h3></li>
+			</ul>
+			<h2>Requirements</h2>
+			<ul>
+				<li><h3>Needed input: what we need in order to realize and populate our museum</h3></li>
+				<li><h3>Desired output: what result we expect</h3></li>
+			</ul>
+			<h2>Feasibility study</h2>
+			<h2>Content</h2>
+			<ul>
+				<li><h3>Museum content and organization</h3></li>
+				<li><h3>Selection criteria</h3></li>
+				<li><h3>Metadata</h3></li>
+			</ul>
+			<h2>Multimedia score</h2>
+			<h2>Desing and development schema</h2>
+			<ul>
+				<li><h3>Graphic User Interface</h3></li>
+				<li><h3>Accessability and usability</h3></li>
+			</ul>
+			<h2>IMOW Ethics and Rules</h2>
+			<h2>Further Development and Maintenance Issues</h2>
+			<h2>Bibliography</h2>
+
+			<br><br><br>
+
+<!--			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Ideation</h2>
 					<p>The idea of the museum came from the <em>natural exchanging of experiences</em> during the pandemic. </br>
@@ -147,6 +331,7 @@
 					<h2>Feasibility study</h2>
 					<p></p>
 				</div>
+-->
 
 <!--
 				<div class="">
@@ -205,12 +390,12 @@
 
 
 -->
+<!--
 
 		</div>
 	</div>		
 	</div>
 </div>
-
 
 	<div id="fh5co-project">
 		<a id="stories"></a>
@@ -220,7 +405,7 @@
 					<p class="col-md-6 col-md-offset-3 text-center"></p>
 				</div>
 			</div>
-
+-->
 <!--			<div class="row">
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
 					<a href="prova.html#love"><img src="images/pink.png" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
@@ -283,7 +468,7 @@
 	</div>
 
 -->
-
+<!--
 	<div id="fh5co-explore" class="fh5co-bg-section1">
 			<div class="container">
 				<div class="row animate-box">
@@ -305,6 +490,7 @@
 			</div>
 		</div>
 	</div>
+-->
 
 <footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
