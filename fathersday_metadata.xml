@@ -9,7 +9,8 @@ xmlns:dcterms="http://purl.org/dc/terms/">
 <dc:subject class="BT">Celebrations</dc:subject>
 <dc:subject class="NT">Time</dc:subject>
 <dc:subject class="NT">Blog post</dc:subject>
-<dc:description>"Due cuori è una coperta" è un blog di sfogo nato a pochi giorni dall'inizio della quarantena nazionale.
+<dcterms:abstract>This is a post written by Veronica Mascia on her blog "Due cuori e una coperta". She decided to open this blog to write about her experience of being pregnant during quarantine.</dcterms:abstract>
+<dc:description>"Due cuori e una coperta" è un blog di sfogo nato a pochi giorni dall'inizio della quarantena nazionale.
 Cercavo un bambino o forse no, sta di fatto che il 15 Marzo il test è risultato positivo e mentre il mio cervello esplodeva di pensieri si è fatto il 19 Marzo ed era la Festa del papà. 
 Le donne diventano madri appena il test diventa positivo, ma quando diventano padri gli uomini? Per me solo quando il bambino viene al mondo e può proteggerlo tra le sue braccia.
 </dc:description>
