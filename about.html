@@ -240,7 +240,7 @@
 	</div>
 
 	<script>
-		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */ 
 		var dropdown = document.getElementsByClassName("dropdown-btn");
 		var i;
 
@@ -290,11 +290,15 @@
 			</p>
 			
 	<a id="concept">	
-			<h2>Ideation</h2>
+			<h2>Ideation and Concepts</h2>
+			<p>The idea of a museum dedicated to the COVID-19 emergency period came to us from the natural exchanging of experiences during the pandemic. We noticed that people have produced memories of their lives during this particularly difficult historical moment in form of photos, texts, videos and feel now the need to communicate their personal experiences.</p>
+			<p>The COVID-19 emergency wasn’t only - although the hospital crysis was tragic and devastating - a physical emergency, but also a psychological one. All the people in the world were requested to social distance themselves, to avoid contacts and to remain home. Due to the quarantine, the space where things could be exchange became the web: the online environment has been the only way to meet other people and to make people feel - closed in their own home - part of something. It was the only way in which people could stay together.</p>
+			<p>Because of this, the idea of a virtual museum able to collect all these witnesses, eager to be shared, came to us naturally. 
+			We decided to build a unique virtual place for all the uncommon stories of common people, in the form of a museum whose traditional role is to preserve, interpret and communicate the history of a whole population that has found itself to share an unpredictable moment in history.</p>
 			<ul>
-				<li><h3>Concept</h3></li>
 				<a id="purpose">
 				<li><h3>Purposes</h3></li>
+				<p>The main aim of this project coincides with the traditional museum purposes: preserving the authenticity of this particular historical moment, in order to convey it to the future generation. But this fascinating challenge and this innovative scope lie in the way in which this authenticity is realized and told. Indeed, it is a museum "build from below", aimed at housing common people experiences and contents realized in this moment of crysis. This pandemic situation is maybe the first time in human history in which no one can be called a simple spectator: we thus wanted to make a step back to allow everyone to tell their own story.</p>
 				<a id="map">
 				<li><h3>Conceptual map</h3></li>
 				<div class="text-center">
@@ -303,29 +307,127 @@
 				</div>
 			</ul>
 			<h2>Requirements</h2>
+			<p>Once we had clear in mind what we wanted to realize, we needed to think about how to actually realize it. First of all, we need people actually engaging in the virtual museum data population. To do that, the museum itself requires a self-advertisement system able to make contact with common people and invite them to collaborate.</br>
+			The advertisement should take place inside  institutional sites that may share common interests and, of course, in social media platforms.</br>
+			The project should also state clear rules that do not excessively limit the participation in the site but at the same time avoid a mass of interactions not easily manageable, at least in the short term. Also we needed to state the related data protection policies (since the project relies on a collective effort of individuals) and to create a reliable and trustful system for users to interact. Last but not least the project should find (possibly) public funding for sustaining the project in the long term both on the managing and advertisement sides or create a fully sustainable funding through voluntary donations of visitors.</p>
 			<ul>
 				<li><h3>Needed input: what we need in order to realize and populate our museum</h3></li>
+					<p>In order to populate our museum, we ask users for stories or memories that are someway involved with the COVID-19, the quarantine, or the consequences of it. We are not requesting any specific method, structure or material for it, still we would prefer for a image plus textual schema, since we think it is best suited for our purposes: the stillness in time of the image that shows without telling united to the power of words that may direct a more emotional, sympathetic and precise message.</p>
+					<p>Furthermore, each of the memory should have been described by long-term preservation suitable metadata. 
+					So, the content requirements for our museum could have been summarized as:</p>
+						<ul>
+							<li>Displayed contents (original photos, videos, texts) with related descriptions provided by the users or by the managers
+							</li>  
+							<li>Long-term preservation metadata (XML document validated through Dublin Core metadata)</li>
+						</ul>
+					<p>In addition, we needed a concrete place where to store and present our museum content. </br>Thanks to its development simplicity and reception immediacy, we chose to realize our virtual museum in the form of a website. Indeed, this latter format would have allowed us to exploit the online environment disponibility of space and at the same time to reach as many users as possible.</p>
 				<li><h3>Desired output: what result we expect</h3></li>
+					<p>Starting from this material, we tried to visualize the desired output. The final result should have been a virtual museum able to give to the visitors the possibility to freely surf it in its entirety by choosing the path he or she would have preferred, attracted and driven by the content themselves. Also, the essence of the museum would have relied on the user interaction and contribution through the realization and share of their personal content.The museal result should have been an online website representing:</p>
+						<ol><li>A virtual museum with its structure composed by a number of rooms, each dedicated to a certain theme the memories may follow</li>
+						<li>A user submitting and content sharing system</li>
+						<li>An extensive “About” section and a GDPR explanation</li>
+						<li>Few initial examples for other people who want to participate.</li>
+						</ol>
+					<p>Further, data would have been textual and/or multimedial, with related XML data to preserve and organize the submitted material. For privacy and safety reasons the XML files will not be made public unless under request, and through authorization from the author.</p>
+				<li><h3>Why did we choose this idea?</h3></li>
+				<p>We wanted to catch someway the different experiences and perspectives of people living a situation which never happened before at this scale and in this modality. Everyone of us has lived this period in a different way, but we have all shared a seesaw of feelings. We realized that feelings should have been the fil rouge for this collective diary. Feelings were also a good way for organizing efficiently the material, and to show how different experiences could have had a similar sentimental outcome.</br>
+				History and memory are related concepts but at the same time show contradictions: while history is a narration of events through an objective point of view, memory is the personal, sometimes biased, experience of an individual through individual eyes, personal “world vision” and sentimental involvement.</br>
+				It is not inherently wrong to show and speak about memories: the important misstep to avoid is to not present it as actual history or use it as the only source for the historical narration of an event.</br>
+				What we want for our visitors is to experience and think about their own memories by getting in touch with others similar experiences. Our last hope is for visitors to leave the museum with a new sense of empathy and relief.</p>
 			</ul>
-			<h2>Feasibility study</h2>
-			<h2>Content</h2>
-			<ul>
-				<li><h3>Museum content and organization</h3></li>
-				<div class="text-center">
-				<img src="images/exampleitem.png" alt="Example of an item">
-				<p><small>Example of an item in the collection</small></p>
-				</div>
-				<li><h3>Selection criteria</h3></li>
-				<li><h3>Metadata</h3></li>
-			</ul>
+				<h2>Feasibility study</h2>
+					<h2>Content</h2>
+						<ul>
+							<li><h3>Museum content and organization</h3></li>
+								<p>The content of the museum revolves around the COVID-19 emergency. We decided to dedicate only a small initial section to the explanation of the historical data: dates, numerical data and a general introduction to the whole situation. An interactive daily updated map realized through Flourish (flourish.studio) situated in the first page of the website perfectly fulfilled this purpose. We consciously avoided a single-voice narration, preferring to let it rise and be drawn by the diversity and heterogeneity of the memories and stories shared by the users.</p>
+								<p>The content displayed in the museum’s rooms is fully provided by the users that answer to the call for collaboration. We received the first testimonies, representing how everyone has lived this period in a different way. We managed to individuate a hidden aspect among them: we have all shared a seesaw of feelings. We realized that feelings should have been the fil rouge for this collective diary. And feelings were also a good way for organizing efficiently the material, and to show how different experiences could have had a similar sentimental outcome. The main structure of our museum is based on rooms able to classify contents in six different macro-areas related to a feeling or a predominant theme:</p>
+									<ul><li>Stories of Love</li>
+										<li>Stories of Pain</li>
+										<li>Stories of Solidarity</li>
+										<li>Stories of Celebration</li>
+										<li>Stories of Effort</li>
+										<li>Memorial</li></ul>
+								<p>In the first five of them, the main content of the museum is displayed. Each of the item is individuated by a photography, a brief description and the identifying data of the author. The textual description is given in its original language (the one provided by the author) and in an English translation. Also, we decided to classify the huge variety of items through the use of graphic icons indicating whether they are: </p>
+									<ul><li>a photography</li>
+										<li>a video</li>
+										<li>a text</li>
+										<li>an artwork</li>
+										<li>an interview.</li> 
+									</ul>
+								<p>Furthermore, we decided to reserve a specific room to stories that unluckily could be narrated only by someone else since the protagonists of them died during this time. A Memorial was thus dedicated to remember all those people that passed away in this tragic situation which didn’t give them the possibility to say goodbye to their loved ones. The Memorial is structured in a similar way to the other items, with a photograph and a brief text (in this case, specifically an epitaph). We hope this public memorial can, someway, help relieving the sadness of what happened. We are also well conscious that this memorial strays a bit away from the strict museological function and purposes, still we think it someway serves society. 
+								</p>
+									<div class="text-center">
+									<img src="images/exampleitem.png" alt="Example of an item">
+									<p><small>Schema of an item in the collection</small></p>
+									</div>
+							<li><h3>Selection criteria</h3></li>
+								<p>The criteria for inclusion in the museum are various and not easily grouped in a singular paragraph. The selection heavily depends on the content of the contributions. </br>
+								Since IMOW cannot avoid talking about tragic or adult-related issues, it will include tags  (trigger and content warnings) that indicate the specific theme of an element. </br>
+								The museum a priori rejects content that is illegal in itself or that is related with illegal content according to Italian and European laws. </br>
+								The museum rejects any content that incites violence or makes use of discriminatory language, that has fascism apologetic content, that spreads fake news.</br>
+								Any refusal is in addition linked to adequacy within the ethical lines of the museum itself.</p>
+							<li><h3>Metadata</h3></li>
+								<p>Every item of the museum collection is described by a set of metadata for its preservation in the long term and for the possibility to reuse the items in other exhibitions.</br>
+								The items’ metadata are stored in a XML document validated through the Dublin Core vocabulary. </br>
+								XML, thanks to its device-independent and system-independent essence, is the perfect mean to reach an effective interoperability and exchangeability of data. 
+								Dublin Core validation allowed us to express the most important, essential information related to each item, while still maintaining a light and easily manageable structure of the description. In particular, we pay a special attention to these elements: 
+									<ul><i><li>title</li>
+										<li>alternative title</li>
+										<li>creator</li> 
+										<li>publisher</li> 
+										<li>abstract</li> 
+										<li>description</li> 
+										<li>right</li></i></ul>
+								<p>We chose this set of really self-explanatory tags both for their simplicity and for the very nature of the contributions, for which we do not expect further information to be needed. In the event that new contributions prove otherwise, we will update this section.</p>
+						</ul>
+
 			<h2>Multimedia score</h2>
-			<h2>Desing and development schema</h2>
-			<ul>
-				<li><h3>Graphic User Interface</h3></li>
-				<li><h3>Accessability and usability</h3></li>
-			</ul>
-			<h2>IMOW Ethics and Rules</h2>
+				<p>The user enters the museum and finds themselves inside the &quot;reception&quot; of the museum, the Home page. The user enters and is encouraged to read the short paragraphs at the top of the page that trace a simple description of the project. Also, a simple thread with steps shows how the museum actually works. The following is a basic example of how an user could navigate inside the rooms: </p>
+					<ul><li>After the user has entered, he can choose one of the 6 rooms of the museum. Each room is structured with a grid view of various memories.</li> 
+					<li>The user can choose one of them, and is redirected to the individual memory. </li>
+					<li>The user can choose to select another story from similar ones inside the room or go back to the home. </li>
+					<li>Shared experiences and thoughts are seen by the user, who experiences a sense of solidarity, empathy, and (hopefully) feels less alone in their personal experience. </li></ul>
+				<p>Hopefully, after the user has visited the museum, they decide to turn themselves into a contributor. In this case: </p>
+					<ul><li>The user gives a textual or multimedial shape to its own memory, this way elaborating it in a structured way. </li>
+					<li>The user submits their material (multimedia, text and so on) to the IMOW managers, that evaluate and eventually accept the contribute.</li> 
+					<li>The user waits and receives an email as soon as the contribute has been uploaded. </li></ul>
+				<p>Otherwise: </p>
+					<ul><li>After their &quot;stay&quot;, the user can give feedback about the museum.</li></ul>
+
+			<h2>Where do we stand as a museum? </h2>
+				<p>Following the proposed taxonomy of S. Caraceni (2015) this museum may be considered a Virtual Museum of &quot;F&quot; category. </p>
+					<table>
+						<tr>
+					    	<td><i>Need</i></td>
+					    	<td>Complex Museum Identity</td>
+					    </tr>
+					    <tr>
+							<td><i>Interaction</i></td>
+							<td>Open</td>
+						</tr>
+						<tr>
+							<td><i>Space</i></td>
+							<td>Open</td>
+						</tr>
+					    <tr>
+					    	<td><i>Content</i></td>
+					    	<td>Digital movies, text, audio (spoken word, music), georeferenced material</td>
+		     			</tr>
+					    <tr>
+					    	<td><i>Virtual/Real</i></td>
+					    	<td>Virtual</td>
+		   			    </tr>
+		    			<tr>
+		    				<td><i>User Contribution</i></td>
+		    				<td>Allowed</td>
+		    			</tr>
+		    		</table>
+	    		<p>IMOW is an open platform in which visitors both explore and contribute to the content. It is an open space, only organized through virtual &quot;rooms&quot;. All the material is born virtual, in the meaning that it has no physical counterpart. It has no related physical gallery nor exhibition. <br>
+				IMOW is a virtual gallery that doesn’t necessarily stand in the common perception of museum. It is not an experimental museum, since the gallery, the rooms and the contribution system are familiar enough to both the public and the scholars. IMOW has an hybrid identity between a museum and a public diary. Interaction, at least for the initial phase after basic development, is limited to contribution and approachability of the IMOW team. It has no strictly guided itinerary apart from the &quot;related content&quot; system. IMOW is freely browsable by any user without subscription to the museum.</p>
 			<h2>Further Development and Maintenance Issues</h2>
+				<p>Further developments for the virtual museum revolve mostly around maintenance, devolopment of higher-level interaction, management of the submitted data. </br>
+				We look forward implementing a registration systems for users and a tool for automatically insert new memories/items inside the rooms, with just a supervisor verification before making them public. </br>
+				Further possibilities include, depending on the user interaction, a comment/feedback from the users section (just like in physical museums), counters of how many people visited the site, a research system and social media integration for shareability.</p>
 			<h2>Bibliography</h2>
 
 			<br><br><br>
